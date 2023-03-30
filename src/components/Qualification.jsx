@@ -7,13 +7,13 @@ const Qualification = () => {
     const [work, setWork] = useState(false);
 
     return (
-        <div className="qualification w-full h-screen bg-zinc-50">
-            <div className="max-w-[345px] mx-auto pb-10 pt-10">
+        <div id="qualification" className="w-full h-screen bg-zinc-100 flex flex-col justify-center">
+            <div className="max-w-[345px] mx-auto ">
                 <div className="flex flex-col items-center">
                     <h1 className="text-4xl font-bold">Qualification</h1>
                     <span className="text-l font-medium text-gray-500 mt-3 ">My Personal journey</span>
                 </div>
-                <div className="flex justify-center gap-5 pb-5 mt-12 text-xl font-medium text-gray-500">
+                <div className="flex justify-center gap-5 mt-12 text-xl font-medium text-gray-500">
                     <btn className={ education ? "btn flex items-center gap-2 cursor-pointer font-bold shadow rounded-full py-2 px-3" :
                         "flex items-center gap-2 cursor-pointer" }
                         onClick={()=> {
@@ -33,7 +33,7 @@ const Qualification = () => {
                         Work
                     </btn>
                 </div>
-                { education && <div className="grid grid-cols-1 py-6">
+                { education && <div className="grid grid-cols-1 pt-10">
                     <div className="flex">
                         <div className="w-full">
                             <h2 className="text-base font-bold">Engineering cycle Computer Engineering</h2>
@@ -79,7 +79,7 @@ const Qualification = () => {
                         <div className="w-full px-5"/>
                     </div>
                 </div>}
-                { work && <div className="grid grid-cols-1 py-6">
+                { work && <div className="grid grid-cols-1 pt-6">
                     <div className="flex">
                         <div className="w-full">
                             <h2 className="text-base font-bold">Share Conseil |<br/>

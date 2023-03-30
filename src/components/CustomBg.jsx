@@ -3,7 +3,7 @@ import nd from "../assets/nd.png";
 
 const CustomBg = () => {
     return (
-        <svg className="fill-violet-700 h-80 w-80" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" >
+        <svg className="fill-violet-700 h-72 w-72 md:h-80 md:w-80" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" >
             <mask id="mask0" mask-type="alpha">
                 <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
                             130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775

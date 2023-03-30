@@ -6,31 +6,38 @@ import {TbTools} from "react-icons/tb";
 import Qualification from "./Qualification";
 
 const Skills = () => {
-    const [front, setFront] = useState(false);
+    const [activeSkills, activeSkills] =  useState([
+        true,
+        false,
+        false
+    ]);
     const [back, setBack] = useState(false);
     const [technical, setTechnical] = useState(false);
 
 
-    const [isActive1, setIsActive1] = useState(false);
+    const [isActive1, setIsActive1] = useState(true);
     const [isActive2, setIsActive2] = useState(false);
     const [isActive3, setIsActive3] = useState(false);
 
-    // const handleClick = e => {
-    // };
-
     return (
-        <div className="skills w-full h-screen bg-zinc-50">
-            <div className="max-w-2xl mx-auto ">
+        <div id="skills" className="skills w-full h-screen bg-zinc-50 flex items-center">
+            <div className="max-w-2xl mx-auto">
                 <div className="flex flex-col items-center">
                     <h1 className="text-4xl font-bold">Skills</h1>
                     <span className="text-l font-medium text-gray-500 mt-3 ">My technical level</span>
                 </div>
-                <div className="flex grid grid-cols-2 gap-10 py-20">
+                <div className="flex flex-col md:grid md:grid-cols-2 gap-10 pt-20">
                     <div className="flex flex-col">
                         <div className="flex items-center gap-5 px-5 mb-8 cursor-pointer"
                              onClick={() =>
                              {
-                                 setIsActive1(current => !current);
+                                 // setIsActive1(current => !current);
+                                 // if (isActive3){
+                                 //     setIsActive3(false)}
+                                 // else if(isActive2){
+                                 //     setIsActive2(false)
+                                 // }
+
                                  setFront(prevState => !prevState )
                                  if (technical){
                                      setTechnical(!technical)}
@@ -43,11 +50,10 @@ const Skills = () => {
                                 <h1 className="text-xl font-semibold cursor-pointer">Frontend developer</h1>
                                 <span className="text-m text-gray-500">More than 2 years</span>
                             </div>
-                        <FaChevronDown className={isActive1 ? 'open transition-all ease-in-out duration-500'
-                                : 'transition-all ease-in-out duration-500'}
+                        <FaChevronDown className={isActive1 ? 'open': ''}
                                 />
                         </div>
-                        { front && <div  className="flex flex-col gap-5 pl-[70px]">
+                        { activeSkills[0] && <div  className="flex flex-col gap-5 pl-[70px]">
                             <div className="">
                                 <div className="flex justify-between text-sm font-medium mb-2">
                                     <h3>HTML</h3>
@@ -92,6 +98,12 @@ const Skills = () => {
                              onClick={() =>
                              {
                                  setIsActive2(current => !current);
+                                 if (isActive1){
+                                     setIsActive1(false)}
+                                 else if(isActive3){
+                                     setIsActive3(false)
+                                 }
+
                                  setBack(prevState => !prevState )
                                  if (technical){
                                      setTechnical(!technical)}
@@ -104,8 +116,7 @@ const Skills = () => {
                                 <h1 className="text-xl font-semibold cursor-pointer">Backend developer</h1>
                                 <span className="text-m text-gray-500">More than 2 years</span>
                             </div>
-                            <FaChevronDown className={isActive2 ? 'open transition-all ease-in-out duration-500'
-                                : 'transition-all ease-in-out duration-500'}
+                            <FaChevronDown className={isActive2 ? 'open': ''}
                             />
                         </div>
                         { back && <div  className="flex flex-col gap-5 pl-[70px]">
@@ -153,6 +164,11 @@ const Skills = () => {
                              onClick={() =>
                              {
                                  setIsActive3(current => !current);
+                                 if (isActive1){
+                                     setIsActive1(false)}
+                                 else if(isActive2){
+                                     setIsActive2(false)
+                                 }
                                  // handleClick();
                                  setTechnical(prevState => !prevState )
                                  if (front){
@@ -166,8 +182,7 @@ const Skills = () => {
                                 <h1 className="text-xl font-semibold cursor-pointer">Technical competence</h1>
                                 <span className="text-m text-gray-500">More than 4 years</span>
                             </div>
-                            <FaChevronDown className={isActive3 ? 'open transition-all ease-in-out duration-500'
-                                : 'transition-all ease-in-out duration-500'}
+                            <FaChevronDown className={isActive3 ? 'open': ''}
                             />
                         </div>
                         { technical  && <div  className="flex flex-col gap-5 pl-[70px]">
@@ -211,7 +226,6 @@ const Skills = () => {
                     </div>
                 </div>
             </div>
-            <Qualification />
         </div>
     );
 }
