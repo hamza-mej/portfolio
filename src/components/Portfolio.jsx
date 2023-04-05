@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useRef} from 'react';
 import estoShop from "./../assets/estoShop.jpg";
 import shop from "./../assets/shop.png";
 import rba7 from "./../assets/rba7.png";
@@ -45,7 +45,6 @@ const Portfolio = () => {
                     navigation={true}
                     modules={[Autoplay, Pagination, Navigation]}
                     onAutoplayTimeLeft={onAutoplayTimeLeft}
-                    // modules={[Pagination, Navigation]}
                     className="mySwiper"
                 >
                     <SwiperSlide>
@@ -60,11 +59,11 @@ const Portfolio = () => {
                                     <p className="font-medium text-gray-400 text-[15px] pt-4">Realization of an e-commerce website for the sale of
                                         produced through the Symfony/React Js framework.</p>
 
-                                    <a href="/" className="bg-violet-700 py-3 px-3 mt-4 flex inline-flex text-slate-50
-                                                font-medium rounded-lg items-center gap-1 hover:bg-violet-800">
+                                    <button  disabled className="disabled bg-violet-300 py-3 px-3 mt-4 flex inline-flex text-slate-50
+                                                font-medium rounded-lg items-center gap-1 " Z>
                                         Demo
                                         <HiOutlineArrowSmRight className="text-2xl text-slate-50 transition-all duration-500"/>
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -80,7 +79,7 @@ const Portfolio = () => {
                                     <h2 className="font-bold text-lg">Website rba7</h2>
                                     <p className="font-medium text-gray-400 text-[15px] pt-4">Realization and deployment of a game site responsive with | html - css - javascript.</p>
 
-                                    <a href="/" className="bg-violet-700 py-3 px-3 mt-4 flex inline-flex text-slate-50
+                                    <a href="https://hamza-mej.github.io/rba7-wordle/" target="_blank" className="bg-violet-700 py-3 px-3 mt-4 flex inline-flex text-slate-50
                                                 font-medium rounded-lg items-center gap-1 hover:bg-violet-800">
                                         Demo
                                         <HiOutlineArrowSmRight className="text-2xl text-slate-50 transition-all duration-500"/>
@@ -98,22 +97,22 @@ const Portfolio = () => {
                             <div className="flex flex-col justify-center">
                                 <div className="px-4">
                                     <h2 className="font-bold text-lg">Website ESTO Shop</h2>
-                                    <p className="font-medium text-gray-400 text-[15px] pt-4">Website ssssssssssssssssssssssssssssss sssss ssss adaptable to all devices, with ui components and animated interactions.</p>
+                                    <p className="font-medium text-gray-400 text-[15px] pt-4">Website adaptable to all devices, with ui components and animated interactions.</p>
 
-                                    <a href="/" className="bg-violet-700 py-3 px-3 mt-4 flex inline-flex text-slate-50
-                                                font-medium rounded-lg items-center gap-1 hover:bg-violet-800">
+                                    <button  disabled className="bg-violet-300 py-3 px-3 mt-4 flex inline-flex text-slate-50
+                                                font-medium rounded-lg items-center gap-1">
                                         Demo
                                         <HiOutlineArrowSmRight className="text-2xl text-slate-50 transition-all duration-500"/>
-                                    </a>
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </SwiperSlide>
                     <div className="autoplay-progress" slot="container-end">
                         <svg viewBox="0 0 48 48" ref={progressCircle}>
-                            <circle cx="24" cy="24" r="20"></circle>
+                            <circle cx="24" cy="24" r="20"/>
                         </svg>
-                        <span ref={progressContent}></span>
+                        <span ref={progressContent}/>
                     </div>
                 </Swiper>
             </div>

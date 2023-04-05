@@ -3,21 +3,17 @@ import {BsBraces} from "react-icons/bs";
 import {FaChevronDown} from "react-icons/fa";
 import {CiServer} from "react-icons/ci";
 import {TbTools} from "react-icons/tb";
-import Qualification from "./Qualification";
 
 const Skills = () => {
-    const [activeSkills, activeSkills] =  useState([
-        true,
-        false,
-        false
-    ]);
-    const [back, setBack] = useState(false);
-    const [technical, setTechnical] = useState(false);
+    const [activeDiv, setActiveDiv] = useState(1);
 
-
-    const [isActive1, setIsActive1] = useState(true);
-    const [isActive2, setIsActive2] = useState(false);
-    const [isActive3, setIsActive3] = useState(false);
+    const handleDivClick = (divNumber) => {
+        if (activeDiv === divNumber) {
+            setActiveDiv(0);
+        } else {
+            setActiveDiv(divNumber);
+        }
+    };
 
     return (
         <div id="skills" className="skills w-full h-screen bg-zinc-50 flex items-center">
@@ -29,182 +25,137 @@ const Skills = () => {
                 <div className="flex flex-col md:grid md:grid-cols-2 gap-10 pt-20">
                     <div className="flex flex-col">
                         <div className="flex items-center gap-5 px-5 mb-8 cursor-pointer"
-                             onClick={() =>
-                             {
-                                 // setIsActive1(current => !current);
-                                 // if (isActive3){
-                                 //     setIsActive3(false)}
-                                 // else if(isActive2){
-                                 //     setIsActive2(false)
-                                 // }
-
-                                 setFront(prevState => !prevState )
-                                 if (technical){
-                                     setTechnical(!technical)}
-                                 else if(back){
-                                     setBack(!back)
-                                 }}
-                             }>
+                             onClick={() =>handleDivClick(1)}>
                             <BsBraces className="text-3xl text-violet-900"/>
                             <div className="grow">
                                 <h1 className="text-xl font-semibold cursor-pointer">Frontend developer</h1>
                                 <span className="text-m text-gray-500">More than 2 years</span>
                             </div>
-                        <FaChevronDown className={isActive1 ? 'open': ''}
+                        <FaChevronDown className={activeDiv === 1 ? 'open': ''}
                                 />
                         </div>
-                        { activeSkills[0] && <div  className="flex flex-col gap-5 pl-[70px]">
-                            <div className="">
+                        <div style={{ display: activeDiv === 1 ? "block" : "none" }}  className="flex flex-col gap-5 pl-[70px]">
+                            <div className="mb-3">
                                 <div className="flex justify-between text-sm font-medium mb-2">
                                     <h3>HTML</h3>
-                                    <span className="text-gray-500">90%   </span>
-                                </div>
-                                <div className="w-full bg-violet-300 rounded-full h-1 dark:violet-200">
-                                    <div className="bg-violet-700 h-1 rounded-full w-[90%]"/>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="flex justify-between text-sm font-medium mb-2">
-                                    <h3>CSS - Tailwind</h3>
-                                    <span className="text-gray-500">90%   </span>
-                                </div>
-                                <div className="w-full bg-violet-300 rounded-full h-1 dark:violet-200">
-                                    <div className="bg-violet-700 h-1 rounded-full w-[90%]"/>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="flex justify-between text-sm font-medium mb-2">
-                                    <h3>JS</h3>
                                     <span className="text-gray-500">80%   </span>
                                 </div>
                                 <div className="w-full bg-violet-300 rounded-full h-1 dark:violet-200">
                                     <div className="bg-violet-700 h-1 rounded-full w-[80%]"/>
                                 </div>
                             </div>
-                            <div>
+                            <div className="mb-3">
                                 <div className="flex justify-between text-sm font-medium mb-2">
-                                    <h3>REACT JS</h3>
-                                    <span className="text-gray-500">85%   </span>
+                                    <h3>CSS - Tailwind</h3>
+                                    <span className="text-gray-500">80%   </span>
                                 </div>
                                 <div className="w-full bg-violet-300 rounded-full h-1 dark:violet-200">
-                                    <div className="bg-violet-700 h-1 rounded-full w-[85%]"/>
+                                    <div className="bg-violet-700 h-1 rounded-full w-[80%]"/>
                                 </div>
                             </div>
-                        </div> }
+                            <div className="mb-3">
+                                <div className="flex justify-between text-sm font-medium mb-2">
+                                    <h3>JS</h3>
+                                    <span className="text-gray-500">70%   </span>
+                                </div>
+                                <div className="w-full bg-violet-300 rounded-full h-1 dark:violet-200">
+                                    <div className="bg-violet-700 h-1 rounded-full w-[70%]"/>
+                                </div>
+                            </div>
+                            <div className="mb-3">
+                                <div className="flex justify-between text-sm font-medium mb-2">
+                                    <h3>REACT JS</h3>
+                                    <span className="text-gray-500">75%   </span>
+                                </div>
+                                <div className="w-full bg-violet-300 rounded-full h-1 dark:violet-200">
+                                    <div className="bg-violet-700 h-1 rounded-full w-[75%]"/>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div className="flex flex-col">
                         <div className="flex items-center gap-5 px-5 mb-8 cursor-pointer"
-                             onClick={() =>
-                             {
-                                 setIsActive2(current => !current);
-                                 if (isActive1){
-                                     setIsActive1(false)}
-                                 else if(isActive3){
-                                     setIsActive3(false)
-                                 }
-
-                                 setBack(prevState => !prevState )
-                                 if (technical){
-                                     setTechnical(!technical)}
-                                 else if(front){
-                                     setFront(!front)
-                                 }}
-                             }>
+                             onClick={() =>handleDivClick(2)}>
                             <CiServer className="text-3xl text-violet-900"/>
                             <div className="grow">
                                 <h1 className="text-xl font-semibold cursor-pointer">Backend developer</h1>
                                 <span className="text-m text-gray-500">More than 2 years</span>
                             </div>
-                            <FaChevronDown className={isActive2 ? 'open': ''}
+                            <FaChevronDown className={activeDiv === 2 ? 'open': ''}
                             />
                         </div>
-                        { back && <div  className="flex flex-col gap-5 pl-[70px]">
-                            <div className="">
+                        <div style={{ display: activeDiv === 2 ? "block" : "none" }} className="flex flex-col gap-5 pl-[70px]">
+                            <div className="mb-3">
                                 <div className="flex justify-between text-sm font-medium mb-2">
                                     <h3>POO - MVC </h3>
-                                    <span className="text-gray-500">80%   </span>
+                                    <span className="text-gray-500">70%   </span>
                                 </div>
                                 <div className="w-full bg-violet-300 rounded-full h-1 dark:violet-200">
-                                    <div className="bg-violet-700 h-1 rounded-full w-[80%]"/>
+                                    <div className="bg-violet-700 h-1 rounded-full w-[70%]"/>
                                 </div>
                             </div>
-                            <div>
+                            <div className="mb-3">
                                 <div className="flex justify-between text-sm font-medium mb-2">
                                     <h3>PHP</h3>
-                                    <span className="text-gray-500">80%   </span>
+                                    <span className="text-gray-500">70%   </span>
                                 </div>
                                 <div className="w-full bg-violet-300 rounded-full h-1 dark:violet-200">
-                                    <div className="bg-violet-700 h-1 rounded-full w-[80%]"/>
+                                    <div className="bg-violet-700 h-1 rounded-full w-[70%]"/>
                                 </div>
                             </div>
-                            <div>
+                            <div className="mb-3">
                                 <div className="flex justify-between text-sm font-medium mb-2">
                                     <h3>SYMFONY</h3>
-                                    <span className="text-gray-500">85%   </span>
+                                    <span className="text-gray-500">75%   </span>
                                 </div>
                                 <div className="w-full bg-violet-300 rounded-full h-1 dark:violet-200">
-                                    <div className="bg-violet-700 h-1 rounded-full w-[85%]"/>
+                                    <div className="bg-violet-700 h-1 rounded-full w-[75%]"/>
                                 </div>
                             </div>
-                            <div>
+                            <div className="mb-3">
                                 <div className="flex justify-between text-sm font-medium mb-2">
                                     <h3>API PLATFORM</h3>
-                                    <span className="text-gray-500">80%   </span>
+                                    <span className="text-gray-500">70%   </span>
                                 </div>
                                 <div className="w-full bg-violet-300 rounded-full h-1 dark:violet-200">
-                                    <div className="bg-violet-700 h-1 rounded-full w-[80%]"/>
+                                    <div className="bg-violet-700 h-1 rounded-full w-[70%]"/>
                                 </div>
                             </div>
-                        </div> }
+                        </div>
                     </div>
 
                     <div className="flex flex-col">
                         <div className="flex items-center gap-5 px-5 mb-8 cursor-pointer"
-                             onClick={() =>
-                             {
-                                 setIsActive3(current => !current);
-                                 if (isActive1){
-                                     setIsActive1(false)}
-                                 else if(isActive2){
-                                     setIsActive2(false)
-                                 }
-                                 // handleClick();
-                                 setTechnical(prevState => !prevState )
-                                 if (front){
-                                     setFront(!front)}
-                                 else if(back){
-                                     setBack(!back)
-                                 }
-                             }}>
+                             onClick={() =>handleDivClick(3)}>
                             <TbTools className="text-3xl text-violet-900"/>
                             <div className="grow">
                                 <h1 className="text-xl font-semibold cursor-pointer">Technical competence</h1>
                                 <span className="text-m text-gray-500">More than 4 years</span>
                             </div>
-                            <FaChevronDown className={isActive3 ? 'open': ''}
+                            <FaChevronDown className={activeDiv === 3 ? 'open': ''}
                             />
                         </div>
-                        { technical  && <div  className="flex flex-col gap-5 pl-[70px]">
-                            <div className="">
+                        <div style={{ display: activeDiv === 3 ? "inline-block" : "none" }} className="flex flex-col pl-[70px]">
+                            <div className="mb-3">
                                 <div className="flex justify-between text-sm font-medium mb-2">
                                     <h3>UML - SCRUM</h3>
-                                    <span className="text-gray-500">85%   </span>
+                                    <span className="text-gray-500">75%   </span>
                                 </div>
                                 <div className="w-full bg-violet-300 rounded-full h-1 dark:violet-200">
-                                    <div className="bg-violet-700 h-1 rounded-full w-[85%]"/>
+                                    <div className="bg-violet-700 h-1 rounded-full w-[75%]"/>
                                 </div>
                             </div>
-                            <div>
+                            <div className="mb-3">
                                 <div className="flex justify-between text-sm font-medium mb-2">
                                     <h3>GIT</h3>
-                                    <span className="text-gray-500">90%   </span>
+                                    <span className="text-gray-500">80%   </span>
                                 </div>
                                 <div className="w-full bg-violet-300 rounded-full h-1 dark:violet-200">
-                                    <div className="bg-violet-700 h-1 rounded-full w-[90%]"/>
+                                    <div className="bg-violet-700 h-1 rounded-full w-[80%]"/>
                                 </div>
                             </div>
-                            <div>
+                            <div className="mb-3">
                                 <div className="flex justify-between text-sm font-medium mb-2">
                                     <h3>DOCKER</h3>
                                     <span className="text-gray-500">60%   </span>
@@ -213,7 +164,7 @@ const Skills = () => {
                                     <div className="bg-violet-700 h-1 rounded-full w-[60%]"/>
                                 </div>
                             </div>
-                            <div>
+                            <div className="mb-3">
                                 <div className="flex justify-between text-sm font-medium mb-2">
                                     <h3>PHOTOSHOP - ILLUSTRATOR</h3>
                                     <span className="text-gray-500">65%   </span>
@@ -222,7 +173,7 @@ const Skills = () => {
                                     <div className="bg-violet-700 h-1 rounded-full w-[65%]"/>
                                 </div>
                             </div>
-                        </div> }
+                        </div>
                     </div>
                 </div>
             </div>

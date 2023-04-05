@@ -9,7 +9,7 @@ const About = () => {
     const [ref, inView] = useInView()
 
     return (
-        <div id="about" className="w-full h-screen bg-zinc-100 flex items-center">
+        <div id="about" className="w-full h-screen bg-zinc-50 md:bg-zinc-100 flex items-center">
             <div className="max-w-6xl mx-auto  flex flex-col justify-center">
                 <div className="flex flex-col items-center pt-4">
                     <h1 className="text-4xl font-bold">About Me</h1>

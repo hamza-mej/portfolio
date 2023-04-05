@@ -1,5 +1,4 @@
 import React from 'react';
-// import {BsFillMoonStarsFill} from "react-icons/bs";
 import {DiDoctrine} from "react-icons/di";
 import {SlSocialLinkedin} from "react-icons/sl";
 import {SlSocialDribbble} from "react-icons/sl";
@@ -14,28 +13,22 @@ import CustomBg from "./CustomBg";
 
 const Home = () => {
     return (
-        <div className=" bg-zinc-50 pt-52 ">
+        <div id="home" className=" bg-zinc-50 pt-28 md:pt-52">
             <div className="md:max-w-6xl mx-auto ">
-                <div className="flex flex-col gap-16 md:gap-10  md:grid grid-cols-2">
-                    <motion.div
-                        animate={{ y: 10 }}
-                        transition={{ ease: "easeOut", duration: 2 }}
-                        className="-mt-28 mx-auto md:hidden ">
-                        <CustomBg />
-                    </motion.div>
-                    <div className="flex  grid grid-cols-3 md:gap-10">
+                <div className="flex flex-col-reverse md:flex-row gap-16 md:gap-10  ">
+                    <div className="flex grid grid-cols-3 md:grid-cols-4">
                         <div className="flex flex-col justify-center px-5 text-xl text-violet-900 gap-5 mr-25">
-                            <a href="https://www.linkedin.com/in/hamza-mejdoubi-13474a14a/" className="hover:text-violet-600 hover:text-2xl">
+                            <a href="https://www.linkedin.com/in/hamza-mejdoubi-13474a14a/" target="_blank" className="hover:text-violet-600 hover:text-2xl" rel="noreferrer">
                                 <SlSocialLinkedin className="transition-all duration-300"/>
                             </a>
-                            <a href="/" className="hover:text-violet-600 hover:text-2xl">
+                            <Link to="home" className="hover:text-violet-600 hover:text-2xl cursor-pointer">
                                 <SlSocialDribbble className="transition-all duration-300"/>
-                            </a>
-                            <a href="/" className="hover:text-violet-600 hover:text-2xl">
+                            </Link>
+                            <a href="https://github.com/hamza-mej" target="_blank" className="hover:text-violet-600 hover:text-2xl" rel="noreferrer">
                                 <FiGithub className="transition-all duration-300"/>
                             </a>
                         </div>
-                        <div className="col-span-2">
+                        <div className="col-span-2 md:col-span-3">
                             <h1 className="text-5xl font-bold">Hi, I'm Hamza </h1>
                             <h3 className="text-xl font-medium text-gray-500 mt-4">Frontend Developer</h3>
                             <p className="text-l font-normal text-gray-500 mt-4 mb-6">High level experience in web development and knowledge, producing quality work.</p>
@@ -48,9 +41,9 @@ const Home = () => {
                     </div>
 
                     <motion.div
-                        animate={{ x: -20 }}
+                        animate={{ x: -10 }}
                         transition={{ ease: "easeOut", duration: 2 }}
-                        className="hidden md:flex -mt-6 justify-center">
+                        className="flex ml-6 justify-center">
                         <CustomBg />
                     </motion.div>
                 </div>

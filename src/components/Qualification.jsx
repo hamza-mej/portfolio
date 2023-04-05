@@ -7,7 +7,7 @@ const Qualification = () => {
     const [work, setWork] = useState(false);
 
     return (
-        <div id="qualification" className="w-full h-screen bg-zinc-100 flex flex-col justify-center">
+        <div id="qualification" className="w-full h-screen bg-zinc-50 md:bg-zinc-100 flex flex-col justify-center">
             <div className="max-w-[345px] mx-auto ">
                 <div className="flex flex-col items-center">
                     <h1 className="text-4xl font-bold">Qualification</h1>

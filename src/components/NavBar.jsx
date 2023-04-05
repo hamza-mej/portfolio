@@ -5,6 +5,7 @@ import {FiHome} from "react-icons/fi";
 
 const NavBar = () => {
     const [ open, setOpen] = useState(false);
+
     const navLinks = [
         {
             name: "About",
@@ -25,19 +26,16 @@ const NavBar = () => {
         {
             name: "Contact",
             id: "contact"
-        },
-        // {
-        //     name: <BsFillMoonStarsFill/>,
-        //     id: "contact me"
-        // },
+        }
     ];
     return (
         <nav className="fixed w-screen h-[80px] py-7 bg-zinc-50 z-50" >
             <div className="md:max-w-6xl mx-auto">
                 <div className="md:flex items-center justify-between  ">
                     <div className="flex items-center justify-between px-6 md:px-0">
-                        <div className="first-letter:text-2xl md:first-letter:text-xl font-medium text-gray-500 text-xl md:text-lg  tracking-widers">
-                            <a href="/">Portfolio</a>
+                        <div className="first-letter:text-2xl md:first-letter:text-xl font-medium text-gray-500 text-xl md:text-lg
+                                        tracking-widers cursor-pointer">
+                            <Link to="home" spy={true} smooth={true} offset={-40} duration={500}>Portfolio</Link>
                         </div>
                         <div className="md:hidden text-2xl" onClick={()=> {
                             setOpen(prevState => !prevState)
@@ -47,7 +45,7 @@ const NavBar = () => {
                     </div>
                     <div className="hidden md:flex">
                         <div className="">
-                            <a href="/" className=" text-violet-700 text-xl font-medium mr-3">Home</a>
+                            <Link to="home" spy={true} smooth={true} offset={-40} duration={500} className="font-medium text-violet-700  text-xl mr-3 cursor-pointer">Home</Link>
                             {
                                 navLinks.map((link,index)=>(
                                     <Link
@@ -66,7 +64,14 @@ const NavBar = () => {
                     {open &&
                         <div className="flex flex-col items-center justify-center h-screen gap-10 pb-36 mt-5 md:hidden
                           bg-slate-50">
-                            <a href="/" className="text-violet-700 text-5xl font-medium"><FiHome/></a>
+                            <Link
+                                onClick={()=>{
+                                setOpen(prevState => !prevState)
+                                }}
+                                to="home"
+                                spy={true} smooth={true} offset={-40} duration={500}
+                                className="text-violet-700 text-5xl font-medium"><FiHome/>
+                            </Link>
                             {
                                 navLinks.map((link,index)=>(
                                     <Link

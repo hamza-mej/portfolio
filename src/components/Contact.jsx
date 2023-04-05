@@ -5,7 +5,7 @@ import {AiOutlineSend} from "react-icons/ai";
 
 const Contact = () => {
     return (
-        <div id="contact" className="w-full h-screen bg-zinc-100 flex flex-col justify-center">
+        <div id="contact" className="w-full h-screen bg-zinc-50 md:bg-zinc-100 flex flex-col justify-center">
             <div className="max-w-4xl mx-auto pb-10 pt-10">
                 <div className="flex flex-col items-center pb-8 md:pb-12">
                     <h1 className="text-4xl font-bold">Contact Me</h1>
@@ -22,9 +22,9 @@ const Contact = () => {
                         </div>
                         <div className="flex gap-5 items-center py-2">
                             <FiMail className="text-3xl text-violet-700"/>
-                            <div className="">
-                                <h1 className="text-xl font-medium">Email</h1>
-                                <span className="text-xs font-medium text-gray-400">Mejdoubi.hamzaa@gmail.com</span>
+                            <div className="flex flex-col gap-1.5">
+                                <a href="mailto:Mejdoubi.hamzaa@gmail.com" className="text-xl font-medium">Email</a>
+                                <a href="mailto:Mejdoubi.hamzaa@gmail.com" className="text-xs font-medium text-gray-400 hover:text-gray-600 cursor-pointer">Mejdoubi.hamzaa@gmail.com</a>
                             </div>
                         </div>
                         <div className="flex gap-5 items-center py-2">
@@ -54,7 +54,7 @@ const Contact = () => {
                         placeholder-gray-500"/>
                         </div>
                         <button className="mx-20 md:mx-0 col-span-2 md:col-span-1 bg-violet-700 hover:bg-violet-800 py-4 md:px-3 md:mt-4 flex inline-flex text-slate-100
-                                            font-medium rounded-lg items-center gap-2 md:mr-20 justify-center">
+                                            font-medium rounded-lg items-center gap-2 md:mr-20 justify-center mb-10 md:mb-0">
                             Send Message <AiOutlineSend className="mt-1 text-xl"/>
                         </button>
                     </form>
