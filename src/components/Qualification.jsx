@@ -81,6 +81,20 @@ const Qualification = () => {
                 </div>}
                 { work && <div className="grid grid-cols-1 pt-6">
                     <div className="flex">
+                        <div className="w-full "/>
+                        <div className="w-0.5 bg-violet-300  h-full ">
+                            <div className="bg-violet-700 h-3 rounded-full w-3 -ml-[5px]"/>
+                        </div>
+                        <div className="w-full px-5">
+                            <h2 className="text-base font-bold">Articode</h2>
+                            <h3 className="text-gray-600 font-medium text-sm mt-0.5">Technopark Casablanca</h3>
+                            <span className="flex items-center gap-1.5 text-gray-400 font-medium text-xs py-3">
+                                <MdOutlineDateRange/>
+                                <h4 className="">2023</h4>
+                            </span>
+                        </div>
+                    </div>
+                    <div className="flex">
                         <div className="w-full">
                             <h2 className="text-base font-bold">Share Conseil |<br/>
                                 (Leadz) </h2>
@@ -122,26 +136,13 @@ const Qualification = () => {
                                 <h4 className="">2021</h4>
                             </span>
                         </div>
-                        <div className="w-0.5 bg-violet-300  h-full ">
-                            <div className="bg-violet-700 h-3 rounded-full w-3 -ml-[5px]"/>
+                        <div>
+                            <div className="bg-violet-700 h-3 rounded-full w-3"/>
                         </div>
                         <div className="w-full px-5"/>
                     </div>
 
-                    <div className="flex">
-                        <div className="w-full "/>
-                        <div className="">
-                            <div className="bg-violet-700 h-3 rounded-full w-3 "/>
-                        </div>
-                        <div className="w-full px-5">
-                            <h2 className="text-base font-bold">Stage PFA | NB Car</h2>
-                            <h3 className="text-gray-600 font-medium text-sm mt-0.5">Agence location de voiture à oujda</h3>
-                            <span className="flex items-center gap-1.5 text-gray-400 font-medium text-xs py-3">
-                                <MdOutlineDateRange/>
-                                <h4 className="">2018</h4>
-                            </span>
-                        </div>
-                    </div>
+                    
                 </div>}
             </div>
         </div>
