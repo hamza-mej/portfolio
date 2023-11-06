@@ -31,7 +31,7 @@ const Contact = () => {
                             <HiOutlineLocationMarker className="text-3xl text-violet-700"/>
                             <div className="">
                                 <h1 className="text-xl font-medium">Location</h1>
-                                <span className="text-xs font-medium text-gray-400">Maroc - rabat</span>
+                                <span className="text-xs font-medium text-gray-400">Maroc</span>
                             </div>
                         </div>
                     </div>

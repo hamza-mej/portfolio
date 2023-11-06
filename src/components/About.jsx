@@ -38,7 +38,7 @@ const About = () => {
                         </div>
                         <div className="flex justify-center md:flex-none md:justify-start">
                             <a
-                                href="/public/CV-MEJDOUBI-Hamza.pdf"
+                                href="/CV-MEJDOUBI-Hamza.pdf"
                                 download="CV-MEJDOUBI-Hamza.pdf"
                                 className="bg-violet-700 hover:bg-violet-800 py-4 px-3 md:mt-4 inline-flex text-slate-50
                                             font-medium rounded-lg items-center gap-4">
