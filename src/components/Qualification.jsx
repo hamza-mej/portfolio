@@ -8,7 +8,7 @@ const Qualification = () => {
 
     return (
         <div id="qualification" className="w-full h-screen bg-zinc-50 md:bg-zinc-100 flex flex-col justify-center">
-            <div className="max-w-[345px] mx-auto ">
+            <div className="max-w-[550px] mx-auto">
                 <div className="flex flex-col items-center">
                     <h1 className="text-4xl font-bold">Qualification</h1>
                     <span className="text-l font-medium text-gray-500 mt-3 ">My Personal journey</span>
@@ -80,30 +80,30 @@ const Qualification = () => {
                     </div>
                 </div>}
                 { work && <div className="grid grid-cols-1 pt-6">
-                    <div className="flex">
-                        <div className="w-full "/>
-                        <div className="w-0.5 bg-violet-300  h-full ">
+                    <div className="flex ">
+                        <div className="w-full"/>
+                        <div className="w-0.5 bg-violet-300 h-full ">
                             <div className="bg-violet-700 h-3 rounded-full w-3 -ml-[5px]"/>
                         </div>
                         <div className="w-full px-5">
-                            <h2 className="text-base font-bold">Articode</h2>
-                            <h3 className="text-gray-600 font-medium text-sm mt-0.5">Technopark Casablanca</h3>
+                            <h2 className="text-base font-bold">TOMOES</h2>
+                            <h3 className="text-gray-600 font-medium text-sm mt-0.5">Agence de développement - MARRAKESH (Télétravail)
+                            </h3>
                             <span className="flex items-center gap-1.5 text-gray-400 font-medium text-xs py-3">
                                 <MdOutlineDateRange/>
-                                <h4 className="">2023</h4>
+                                <h4>July 2023 - Oct 2024 <br/> (1 year and 4 months)</h4>
                             </span>
                         </div>
                     </div>
                     <div className="flex">
                         <div className="w-full">
-                            <h2 className="text-base font-bold">Share Conseil |<br/>
-                                (Leadz) </h2>
-                            <h3 className="text-gray-600 font-medium text-sm mt-0.5">Agence
-                                web digitale à rabat
+                            <h2 className="text-base font-bold">Share Conseil</h2>
+                            <h3 className="text-gray-600 font-medium text-sm mt-0.5">Agence web digitale - MAROC RABAT (Présentiel) 
+
                             </h3>
                             <span className="flex items-center gap-1.5 text-gray-400 font-medium text-xs py-3">
                                 <MdOutlineDateRange/>
-                                <h4 className="">2022 - 2023</h4>
+                                <h4>Août 2022 - Sep 2023 <br/> (9 months)</h4>
                             </span>
                         </div>
                         <div className="w-0.5 bg-violet-300  h-full ">
@@ -114,15 +114,16 @@ const Qualification = () => {
 
                     <div className="flex">
                         <div className="w-full "/>
-                        <div className="w-0.5 bg-violet-300  h-full ">
+                        <div className="w-0.5 bg-violet-300 h-full">
                             <div className="bg-violet-700 h-3 rounded-full w-3 -ml-[5px]"/>
                         </div>
                         <div className="w-full px-5">
-                            <h2 className="text-base font-bold">Ahla Media</h2>
-                            <h3 className="text-gray-600 font-medium text-sm mt-0.5">Agence de marketing digital à oujda</h3>
+                            <h2 className="text-base font-bold">Algolus</h2>
+                            <h3 className="text-gray-600 font-medium text-sm mt-0.5">Agence de marketing digital - MAROC OUJDA (Présentiel)
+                            </h3>
                             <span className="flex items-center gap-1.5 text-gray-400 font-medium text-xs py-3">
                                 <MdOutlineDateRange/>
-                                <h4 className="">2022</h4>
+                                <h4>Janvier 2022 - Juin 2022 <br/> (6 months)</h4>
                             </span>
                         </div>
                     </div>
@@ -133,7 +134,7 @@ const Qualification = () => {
                             <h3 className="text-gray-600 font-medium text-sm mt-0.5">agence web experte en développement des sites web à oujda</h3>
                             <span className="flex items-center gap-1.5 text-gray-400 font-medium text-xs py-3">
                                 <MdOutlineDateRange/>
-                                <h4 className="">2021</h4>
+                                <h4>2021 (6 months)</h4>
                             </span>
                         </div>
                         <div>
@@ -141,8 +142,6 @@ const Qualification = () => {
                         </div>
                         <div className="w-full px-5"/>
                     </div>
-
-                    
                 </div>}
             </div>
         </div>

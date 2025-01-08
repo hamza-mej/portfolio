@@ -28,7 +28,7 @@ const About = () => {
                                 <span className="text-center text-gray-500">Years experience</span>
                             </div>
                             <div className="flex flex-col items-center justify-center" ref={ref}>
-                                { inView ? <h1 className="text-2xl font-medium"><CountUp start={-10} end={5} duration={5} />+</h1> : null}
+                                { inView ? <h1 className="text-2xl font-medium"><CountUp start={-10} end={10} duration={5} />+</h1> : null}
                                 <span className="text-center text-gray-500">Completed projects</span>
                             </div>
                             <div className="flex flex-col items-center justify-center" ref={ref}>
@@ -38,7 +38,7 @@ const About = () => {
                         </div>
                         <div className="flex justify-center md:flex-none md:justify-start">
                             <a
-                                href="/CV-MEJDOUBI-Hamza.pdf"
+                                href="/CV_EN_Hamza_MEJDOUBI.pdf"
                                 download="CV-MEJDOUBI-Hamza.pdf"
                                 className="bg-violet-700 hover:bg-violet-800 py-4 px-3 md:mt-4 inline-flex text-slate-50
                                             font-medium rounded-lg items-center gap-4">

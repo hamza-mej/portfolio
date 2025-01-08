@@ -30,8 +30,8 @@ const Home = () => {
                         </div>
                         <div className="col-span-2 md:col-span-3">
                             <h1 className="text-5xl font-bold">Hi, I'm Hamza </h1>
-                            <h3 className="text-xl font-medium text-gray-500 mt-4">Web Developer</h3>
-                            <p className="text-l font-normal text-gray-500 mt-4 mb-6">High level experience in web development and knowledge, producing quality work.</p>
+                            <h3 className="text-xl font-medium text-gray-500 mt-4">Developer</h3>
+                            <p className="text-l font-normal text-gray-500 mt-4 mb-6">High level experience in development, with a strong focus on producing quality work.</p>
                             <Link to="contact" spy={true} smooth={true} offset={-40} duration={500}
                                   className="bg-violet-700 py-4 px-3 mt-4 flex inline-flex text-slate-100
                                          font-medium rounded-lg items-center gap-1 cursor-pointer hover:bg-violet-800">

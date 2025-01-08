@@ -46,7 +46,7 @@ const Skills = () => {
                             </div>
                             <div className="mb-3">
                                 <div className="flex justify-between text-sm font-medium mb-2">
-                                    <h3>CSS - Tailwind</h3>
+                                    <h3>CSS - Bootstrap - Tailwind</h3>
                                     <span className="text-gray-500">80%   </span>
                                 </div>
                                 <div className="w-full bg-violet-300 rounded-full h-1 dark:violet-200">
@@ -64,7 +64,7 @@ const Skills = () => {
                             </div>
                             <div className="mb-3">
                                 <div className="flex justify-between text-sm font-medium mb-2">
-                                    <h3>REACT JS</h3>
+                                    <h3>REACT JS - Redux Toolkit</h3>
                                     <span className="text-gray-500">75%   </span>
                                 </div>
                                 <div className="w-full bg-violet-300 rounded-full h-1 dark:violet-200">

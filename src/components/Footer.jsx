@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="flex flex-col items-center gap-8 md:gap-0 md:grid grid-cols-3 py-5">
                     <div className="text-slate-200 hover:text-slate-100">
                         <Link to="home" spy={true} smooth={true} offset={-40} duration={500} className="text-5xl font-bold cursor-pointer">Hamza</Link>
-                        <span className="font-medium text-sm flex justify-center md:justify-start">Frontend developer</span>
+                        <span className="font-medium text-sm flex justify-center md:justify-start">Developer</span>
                     </div>
                     <div className="flex justify-around gap-8 md:gap-0 text-base font-medium text-slate-200 hover:text-slate-100 cursor-pointer">
                         <Link to="skills" spy={true} smooth={true} offset={-40} duration={500} className="">Skills</Link>
