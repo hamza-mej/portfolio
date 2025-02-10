@@ -91,7 +91,7 @@ const Qualification = () => {
                             </h3>
                             <span className="flex items-center gap-1.5 text-gray-400 font-medium text-xs py-3">
                                 <MdOutlineDateRange/>
-                                <h4>July 2023 - Oct 2024 <br/> (1 year and 4 months)</h4>
+                                <h4>July 2023 - Nov 2024 <br/> (1 year and 4 months)</h4>
                             </span>
                         </div>
                     </div>
