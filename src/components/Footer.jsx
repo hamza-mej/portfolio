@@ -158,11 +158,10 @@ const Footer = () => {
                 </motion.div>
             </div>
 
-            {/* Scroll to Top Button */}
             <ScrollToTop 
                 smooth 
                 component={<FiArrowUp className="mx-auto text-lg" />}
-                className="!bg-violet-600 !text-white !rounded-full !flex !items-center !justify-center !right-6 !bottom-6 !shadow-lg hover:!bg-violet-700 transition-colors"
+                className="!bg-violet-600 !text-white !rounded-lg !flex !items-center !justify-center !right-6 !bottom-6 !shadow-lg hover:!bg-violet-700 transition-colors"
                 width="40"
                 height="40"
             />
