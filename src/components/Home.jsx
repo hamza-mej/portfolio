@@ -12,7 +12,7 @@ import CustomBg from "./CustomBg";
 
 const Home = () => {
     return (
-        <div id="home" className="w-full min-h-screen bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-100 flex items-center py-12 px-4 pt-10">
+        <div id="home" className="w-full min-h-screen bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-100 flex items-center py-12 px-4 pt-20">
             <div className="max-w-6xl mx-auto w-full">
                 <div className="flex flex-col-reverse lg:flex-row gap-12 lg:gap-20 items-center">
                     {/* Social links and content */}

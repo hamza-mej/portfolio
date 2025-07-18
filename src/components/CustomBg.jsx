@@ -4,9 +4,9 @@ import selfie from "../assets/me.jpg";
 const CustomBg = () => {
     
     return (
-<div className="flex justify-center items-center p-8 min-h-[45vh] sm:min-h-[55vh] md:min-h-[65vh] lg:min-h-[80vh]">            <div className="relative group">
-                {/* Main container with gradient background */}
-                <div className="relative w-80 h-80 sm:w-96 sm:h-96 md:w-[28rem] md:h-[28rem] lg:w-[32rem] lg:h-[32rem] xl:w-[36rem] xl:h-[36rem]">
+<div className="flex justify-center items-center p-6 min-h-[32vh] sm:min-h-[39vh] md:min-h-[46vh] lg:min-h-[56vh]">            <div className="relative group">
+                {/* Main container with gradient background - scaled down by 30% */}
+                <div className="relative w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem]">
                     {/* Animated gradient background - using blob shape with percentage-based transforms */}
                     <svg className="absolute inset-0 w-full h-full" viewBox="0 0 576 576">
                         <defs>
@@ -25,7 +25,7 @@ const CustomBg = () => {
                                             97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
                                             0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" 
                                     fill="white" 
-                                    transform="scale(1.9) translate(50, 60)"
+                                    transform="scale(2) translate(44, 52)"
                                 />
                             </mask>
                             <mask id="blobMask3">
@@ -43,10 +43,10 @@ const CustomBg = () => {
                         <rect width="100%" height="100%" fill="url(#bgGradient3)" mask="url(#blobMask3)" className="animate-pulse opacity-30" style={{animationDelay: '2s'}} />
                     </svg>
                     
-                    {/* Main SVG shape - centered within the container */}
+                    {/* Main SVG shape - centered within the container - scaled down by 30% */}
                     <div className="absolute inset-0 flex items-center justify-center">
                         <svg 
-                            className="relative fill-gradient w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 xl:w-88 xl:h-88 drop-shadow-2xl transform transition-transform duration-300 hover:scale-105" 
+                            className="relative fill-gradient w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 xl:w-72 xl:h-72 drop-shadow-2xl transform transition-transform duration-300 hover:scale-105" 
                             viewBox="0 0 200 187" 
                             xmlns="http://www.w3.org/2000/svg"
                         >
@@ -183,20 +183,20 @@ const CustomBg = () => {
                         </svg>
                     </div>
                     
-                    {/* Decorative elements */}
-                    <div className="absolute top-8 left-8 w-8 h-8 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full opacity-70 animate-bounce delay-300"></div>
-                    <div className="absolute bottom-8 right-8 w-6 h-6 bg-gradient-to-br from-pink-400 to-red-500 rounded-full opacity-70 animate-bounce delay-700"></div>
-                    <div className="absolute top-1/3 right-4 w-4 h-4 bg-gradient-to-br from-green-400 to-teal-500 rounded-full opacity-70 animate-bounce delay-1000"></div>
-                    <div className="absolute bottom-1/3 left-4 w-5 h-5 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full opacity-70 animate-bounce delay-1300"></div>
+                    {/* Decorative elements - scaled down by 30% */}
+                    <div className="absolute top-6 left-6 w-6 h-6 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full opacity-70 animate-bounce delay-300"></div>
+                    <div className="absolute bottom-6 right-6 w-4 h-4 bg-gradient-to-br from-pink-400 to-red-500 rounded-full opacity-70 animate-bounce delay-700"></div>
+                    <div className="absolute top-1/3 right-3 w-3 h-3 bg-gradient-to-br from-green-400 to-teal-500 rounded-full opacity-70 animate-bounce delay-1000"></div>
+                    <div className="absolute bottom-1/3 left-3 w-3.5 h-3.5 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-full opacity-70 animate-bounce delay-1300"></div>
                     
-                    {/* Floating particles effect */}
+                    {/* Floating particles effect - scaled down by 30% */}
                     <div className="absolute inset-0 pointer-events-none">
-                        <div className="absolute top-12 left-16 w-2 h-2 bg-white rounded-full opacity-60 animate-ping delay-200"></div>
-                        <div className="absolute bottom-16 right-12 w-1 h-1 bg-white rounded-full opacity-60 animate-ping delay-500"></div>
-                        <div className="absolute top-24 right-20 w-1.5 h-1.5 bg-white rounded-full opacity-60 animate-ping delay-800"></div>
-                        <div className="absolute bottom-24 left-20 w-1 h-1 bg-white rounded-full opacity-60 animate-ping delay-1100"></div>
-                        <div className="absolute top-1/2 left-8 w-1.5 h-1.5 bg-white rounded-full opacity-60 animate-ping delay-1400"></div>
-                        <div className="absolute top-1/2 right-8 w-1 h-1 bg-white rounded-full opacity-60 animate-ping delay-1700"></div>
+                        <div className="absolute top-8 left-11 w-1.5 h-1.5 bg-white rounded-full opacity-60 animate-ping delay-200"></div>
+                        <div className="absolute bottom-11 right-8 w-0.5 h-0.5 bg-white rounded-full opacity-60 animate-ping delay-500"></div>
+                        <div className="absolute top-17 right-14 w-1 h-1 bg-white rounded-full opacity-60 animate-ping delay-800"></div>
+                        <div className="absolute bottom-17 left-14 w-0.5 h-0.5 bg-white rounded-full opacity-60 animate-ping delay-1100"></div>
+                        <div className="absolute top-1/2 left-6 w-1 h-1 bg-white rounded-full opacity-60 animate-ping delay-1400"></div>
+                        <div className="absolute top-1/2 right-6 w-0.5 h-0.5 bg-white rounded-full opacity-60 animate-ping delay-1700"></div>
                     </div>
                 </div>
             </div>
