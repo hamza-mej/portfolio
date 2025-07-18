@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8d52dded.css",
-    "main.js": "/portfolio/static/js/main.3e0cd820.js",
+    "main.css": "/portfolio/static/css/main.53ab2d94.css",
+    "main.js": "/portfolio/static/js/main.c3c68473.js",
     "static/js/787.95afaf24.chunk.js": "/portfolio/static/js/787.95afaf24.chunk.js",
-    "static/media/nd.png": "/portfolio/static/media/nd.9c0d54e805fcdfa98433.png",
     "static/media/shop.png": "/portfolio/static/media/shop.87c54bbdd377bc031097.png",
+    "static/media/surface-planner.png": "/portfolio/static/media/surface-planner.1cddee07a5310130c1ab.png",
     "static/media/rba7.png": "/portfolio/static/media/rba7.ef32b5aa16ff96150073.png",
+    "static/media/me.jpg": "/portfolio/static/media/me.bd013ea42ff4785cbb97.jpg",
     "static/media/estoShop.jpg": "/portfolio/static/media/estoShop.7310b369b5fd0729fed5.jpg",
+    "static/media/booking-app.webp": "/portfolio/static/media/booking-app.30642b37f6fdadddf9e3.webp",
     "static/media/prog.jpg": "/portfolio/static/media/prog.7829398d526ad5365bdd.jpg",
+    "static/media/pdp-app.png": "/portfolio/static/media/pdp-app.76d6a836e9bc2d87e64b.png",
+    "static/media/alert-app.jpg": "/portfolio/static/media/alert-app.195d061de81b48235880.jpg",
     "index.html": "/portfolio/index.html",
-    "main.8d52dded.css.map": "/portfolio/static/css/main.8d52dded.css.map",
-    "main.3e0cd820.js.map": "/portfolio/static/js/main.3e0cd820.js.map",
+    "main.53ab2d94.css.map": "/portfolio/static/css/main.53ab2d94.css.map",
+    "main.c3c68473.js.map": "/portfolio/static/js/main.c3c68473.js.map",
     "787.95afaf24.chunk.js.map": "/portfolio/static/js/787.95afaf24.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d52dded.css",
-    "static/js/main.3e0cd820.js"
+    "static/css/main.53ab2d94.css",
+    "static/js/main.c3c68473.js"
   ]
 }
