@@ -168,7 +168,7 @@ const Contact = () => {
                                         name="email"
                                         value={formData.email}
                                         onChange={handleChange}
-                                        placeholder="email@example.com"
+                                        placeholder="Email@example.com"
                                         required
                                         className="w-full bg-gray-50 border border-gray-200 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-violet-300 focus:border-transparent transition-all"
                                     />
@@ -199,7 +199,7 @@ const Contact = () => {
                                     name="message"
                                     value={formData.message}
                                     onChange={handleChange}
-                                    placeholder="Hello, I'd like to discuss a potential project..."
+                                    placeholder="Message..."
                                     required
                                     rows={5}
                                     className="w-full bg-gray-50 border border-gray-200 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-violet-300 focus:border-transparent transition-all resize-none"

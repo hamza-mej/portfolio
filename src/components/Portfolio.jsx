@@ -99,7 +99,7 @@ const Portfolio = () => {
             ]
         },
         {
-            title: "Notification Configuration App",
+            title: "Notification Scheduling Alerts",
             description: "Desktop app for scheduling alerts with customizable notifications (built with Electron).",
             image: alert,
             link: null,
@@ -112,23 +112,7 @@ const Portfolio = () => {
             image: shop,
             link: null,
             disabled: true,
-            tags: ["Symfony", "React", "API Platform", "Stripe"]
-        },
-        {
-            title: "Wordle Game Clone",
-            description: "A responsive word guessing game built with modern JavaScript, featuring daily challenges and score tracking.",
-            image: rba7,
-            link: "https://hamza-mej.github.io/rba7-wordle/",
-            disabled: false,
-            tags: ["JavaScript", "CSS3", "HTML5", "Responsive"]
-        },
-        {
-            title: "University Shop Portal",
-            description: "A university merchandise platform with admin dashboard, user accounts, and mobile-first responsive design.",
-            image: estoShop,
-            link: null,
-            disabled: true,
-            tags: ["PHP", "MySQL", "Bootstrap", "jQuery"]
+            tags: ["Symfony", "React", "API Platform", "React Components", "Stripe", "From scratch"]
         }
     ];
 
@@ -196,7 +180,7 @@ const Portfolio = () => {
                                     </div>
 
                                     {/* Content Section */}
-                                    <div className="order-2 lg:order-1 flex flex-col justify-center mt-20 lg:mt-0">
+                                    <div className="order-2 lg:order-1 flex flex-col justify-center mt-32 lg:mt-0">
                                         <div className="text-center lg:text-left px-4 lg:px-0">
                                             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3 md:mb-4">
                                                 {item.title}
