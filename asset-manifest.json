@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.c7f085da.css",
-    "main.js": "/portfolio/static/js/main.c43af1c6.js",
+    "main.js": "/portfolio/static/js/main.3fa2a379.js",
     "static/js/787.95afaf24.chunk.js": "/portfolio/static/js/787.95afaf24.chunk.js",
+    "static/media/paragon-properties.png": "/portfolio/static/media/paragon-properties.697ea8de8ba9fd2e4e1d.png",
     "static/media/shop.png": "/portfolio/static/media/shop.87c54bbdd377bc031097.png",
     "static/media/surface-planner.png": "/portfolio/static/media/surface-planner.1cddee07a5310130c1ab.png",
     "static/media/rba7.png": "/portfolio/static/media/rba7.ef32b5aa16ff96150073.png",
@@ -13,11 +14,11 @@
     "static/media/alert-app.jpg": "/portfolio/static/media/alert-app.195d061de81b48235880.jpg",
     "index.html": "/portfolio/index.html",
     "main.c7f085da.css.map": "/portfolio/static/css/main.c7f085da.css.map",
-    "main.c43af1c6.js.map": "/portfolio/static/js/main.c43af1c6.js.map",
+    "main.3fa2a379.js.map": "/portfolio/static/js/main.3fa2a379.js.map",
     "787.95afaf24.chunk.js.map": "/portfolio/static/js/787.95afaf24.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7f085da.css",
-    "static/js/main.c43af1c6.js"
+    "static/js/main.3fa2a379.js"
   ]
 }
