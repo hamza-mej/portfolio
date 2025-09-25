@@ -8,6 +8,7 @@ import alert from "./../assets/alert-app.jpg";
 import booking from "./../assets/booking-app.webp";
 import pdp from "./../assets/pdp-app.png";
 import surfacePlanner from "./../assets/surface-planner.png";
+import paragonProperties from "./../assets/paragon-properties.png";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -46,6 +47,26 @@ const Portfolio = () => {
     };
 
     const portfolioItems = [
+        {
+            title: "Paragon Properties",
+            description: "Implémentation d’une carte interactive Google Maps avec React.js dans le site Paragon Properties pour afficher les projets sur la carte, ajouter des informations détaillées et intégrer des filtres dynamiques.",
+            image: paragonProperties,
+            link: "https://drive.google.com/file/d/1IARwfU9aHkmvClTbDqpMInxKsFj2Z2Im/view?usp=drive_link",
+            disabled: false,
+            stack: {
+                Frontend: "Next.js + React.js",
+                Styling: "Tailwind CSS",
+                API: "Google Maps API",
+                Tools: ["GitHub", "Trello"]
+            },
+            tags: [
+                "Next.js",
+                "React.js",
+                "Google Maps API",
+                "Real Estate Tech",
+                "Interactive Map"
+            ]
+        },
         {
             title: "SurfacePlanner",
             description: "Real estate listing enhancement tool with automated property quotes, professional photo editing, and dynamic forms. Full-stack Next.js with Supabase backend.",
