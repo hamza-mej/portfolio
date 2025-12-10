@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio-eco/static/css/main.109cad40.css",
+    "main.js": "/portfolio-eco/static/js/main.631dc250.js",
+    "static/js/787.95afaf24.chunk.js": "/portfolio-eco/static/js/787.95afaf24.chunk.js",
+    "static/media/paragon-properties.png": "/portfolio-eco/static/media/paragon-properties.697ea8de8ba9fd2e4e1d.png",
+    "static/media/me.png": "/portfolio-eco/static/media/me.c2375c6a7affc3493384.png",
+    "static/media/shop.png": "/portfolio-eco/static/media/shop.87c54bbdd377bc031097.png",
+    "static/media/surface-planner.png": "/portfolio-eco/static/media/surface-planner.1cddee07a5310130c1ab.png",
+    "static/media/rba7.png": "/portfolio-eco/static/media/rba7.ef32b5aa16ff96150073.png",
+    "static/media/estoShop.jpg": "/portfolio-eco/static/media/estoShop.7310b369b5fd0729fed5.jpg",
+    "static/media/booking-app.webp": "/portfolio-eco/static/media/booking-app.30642b37f6fdadddf9e3.webp",
+    "static/media/prog.jpg": "/portfolio-eco/static/media/prog.7829398d526ad5365bdd.jpg",
+    "static/media/pdp-app.png": "/portfolio-eco/static/media/pdp-app.76d6a836e9bc2d87e64b.png",
+    "static/media/alert-app.jpg": "/portfolio-eco/static/media/alert-app.195d061de81b48235880.jpg",
+    "index.html": "/portfolio-eco/index.html",
+    "main.109cad40.css.map": "/portfolio-eco/static/css/main.109cad40.css.map",
+    "main.631dc250.js.map": "/portfolio-eco/static/js/main.631dc250.js.map",
+    "787.95afaf24.chunk.js.map": "/portfolio-eco/static/js/787.95afaf24.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.109cad40.css",
+    "static/js/main.631dc250.js"
+  ]
+}
