@@ -159,8 +159,8 @@ const About = () => {
                             className="pt-6 flex justify-center"
                         >
                             <a
-                                href="/CV_EN_Hamza_MEJDOUBI.pdf"
-                                download="CV_EN_Hamza_MEJDOUBI.pdf"
+                                href="/CV_Hamza_MEJDOUBI.pdf"
+                                download="CV_Hamza_MEJDOUBI.pdf"
                                 className="bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 py-4 px-8 inline-flex text-white font-semibold rounded-xl items-center gap-3 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 group"
                             >
                                 <BsDownload className="text-lg group-hover:animate-bounce" />

@@ -8,7 +8,7 @@ import {HiOutlineArrowSmRight} from "react-icons/hi";
 import {Link} from 'react-scroll';
 import { motion } from "framer-motion"
 
-import CustomBg from "./CustomBg";
+import meImage from "../assets/me.png";
 
 const Home = () => {
     return (
@@ -105,12 +105,16 @@ const Home = () => {
                         initial={{ opacity: 0, x: 50 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ ease: "easeOut", duration: 1 }}
-                        className="flex justify-center lg:justify-end flex-shrink-0"
+                        className="flex justify-center lg:justify-end flex-shrink-0 mt-10"
                     >
-                        <div className="relative">
+                        <div className="relative w-64 h-64 lg:w-80 lg:h-80">
                             <div className="absolute inset-0 bg-gradient-to-r from-violet-400 to-purple-400 rounded-full blur-3xl opacity-20 animate-pulse"></div>
-                            <div className="relative z-10">
-                                <CustomBg />
+                            <div className="relative z-10 w-full h-full">
+                                <img 
+                                    src={meImage} 
+                                    alt="Hamza Mejdoubi" 
+                                    className="w-full h-full object-cover rounded-full shadow-2xl ring-4 ring-white hover:shadow-violet-500/50 transition-all duration-500 hover:scale-105"
+                                />
                             </div>
                         </div>
                     </motion.div>
