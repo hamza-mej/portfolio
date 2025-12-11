@@ -10,7 +10,7 @@ const Footer = () => {
     const socialLinks = [
         {
             icon: <FaLinkedinIn />,
-            href: "https://www.linkedin.com/in/hamza-mejdoubi-13474a14a/",
+            href: "https://www.linkedin.com/in/hamza-m-13474a14a/",
             label: "LinkedIn"
         },
         {

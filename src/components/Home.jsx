@@ -12,16 +12,16 @@ import meImage from "../assets/me.png";
 
 const Home = () => {
     return (
-        <div id="home" className="w-full min-h-screen bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-100 flex items-center py-12 px-4 pt-20">
+        <div id="home" className="w-full min-h-screen bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-100 flex items-center py-12 px-4 pt-24 md:pt-28">
             <div className="max-w-6xl mx-auto w-full">
                 <div className="flex flex-col-reverse lg:flex-row gap-12 lg:gap-20 items-center">
                     {/* Social links and content */}
                     <div className="w-full lg:flex-1">
                         <div className="flex flex-col lg:grid lg:grid-cols-4 gap-8 lg:gap-0">
                             {/* Social Links */}
-                            <div className="flex lg:flex-col justify-center lg:justify-start items-center lg:items-start px-0 lg:px-5 text-2xl text-violet-900 gap-6 lg:gap-8 order-2 lg:order-1">
+                            <div className="flex lg:flex-col justify-center items-center px-0 lg:px-5 text-2xl text-violet-900 gap-6 lg:gap-8 order-2 lg:order-1">
                                 <motion.a 
-                                    href="https://www.linkedin.com/in/hamza-mejdoubi-13474a14a/" 
+                                    href="https://www.linkedin.com/in/hamza-m-13474a14a/" 
                                     target="_blank" 
                                     className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl hover:bg-violet-50 hover:text-violet-600 hover:scale-110 transition-all duration-300 border border-gray-100" 
                                     rel="noreferrer"
@@ -30,15 +30,6 @@ const Home = () => {
                                 >
                                     <SlSocialLinkedin />
                                 </motion.a>
-                                <motion.div 
-                                    className="p-3 rounded-full bg-white shadow-lg hover:shadow-xl hover:bg-violet-50 hover:text-violet-600 hover:scale-110 cursor-pointer transition-all duration-300 border border-gray-100"
-                                    whileHover={{ y: -2 }}
-                                    whileTap={{ scale: 0.95 }}
-                                >
-                                    <Link to="home" className="block">
-                                        <SlSocialDribbble />
-                                    </Link>
-                                </motion.div>
                                 <motion.a 
                                     href="https://github.com/hamza-mej" 
                                     target="_blank" 
