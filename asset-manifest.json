@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.109cad40.css",
-    "main.js": "/portfolio/static/js/main.d0b46ed9.js",
+    "main.css": "/portfolio/static/css/main.d1b7fbeb.css",
+    "main.js": "/portfolio/static/js/main.def9364c.js",
     "static/js/787.95afaf24.chunk.js": "/portfolio/static/js/787.95afaf24.chunk.js",
+    "static/media/SurfacePlanner.mp4": "/portfolio/static/media/SurfacePlanner.fe4b5aa4bd9fa392fd86.mp4",
     "static/media/paragon-properties.png": "/portfolio/static/media/paragon-properties.697ea8de8ba9fd2e4e1d.png",
     "static/media/me.png": "/portfolio/static/media/me.c2375c6a7affc3493384.png",
     "static/media/shop.png": "/portfolio/static/media/shop.87c54bbdd377bc031097.png",
@@ -14,12 +15,12 @@
     "static/media/pdp-app.png": "/portfolio/static/media/pdp-app.76d6a836e9bc2d87e64b.png",
     "static/media/alert-app.jpg": "/portfolio/static/media/alert-app.195d061de81b48235880.jpg",
     "index.html": "/portfolio/index.html",
-    "main.109cad40.css.map": "/portfolio/static/css/main.109cad40.css.map",
-    "main.d0b46ed9.js.map": "/portfolio/static/js/main.d0b46ed9.js.map",
+    "main.d1b7fbeb.css.map": "/portfolio/static/css/main.d1b7fbeb.css.map",
+    "main.def9364c.js.map": "/portfolio/static/js/main.def9364c.js.map",
     "787.95afaf24.chunk.js.map": "/portfolio/static/js/787.95afaf24.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.109cad40.css",
-    "static/js/main.d0b46ed9.js"
+    "static/css/main.d1b7fbeb.css",
+    "static/js/main.def9364c.js"
   ]
 }
