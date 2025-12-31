@@ -62,7 +62,7 @@ const Home = () => {
                                     <div className="flex items-center justify-center lg:justify-start gap-3 mb-6">
                                         <div className="w-12 h-0.5 bg-gradient-to-r from-violet-600 to-purple-600 rounded-full"></div>
                                         <h3 className="text-xl lg:text-2xl font-semibold text-gray-600">
-                                            Full Stack Developer
+                                            Full Stack Developer Confirmed
                                         </h3>
                                         <div className="w-12 h-0.5 bg-gradient-to-r from-violet-600 to-purple-600 rounded-full"></div>
                                     </div>

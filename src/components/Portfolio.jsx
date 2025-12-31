@@ -8,6 +8,7 @@ import alert from "./../assets/alert-app.jpg";
 import booking from "./../assets/booking-app.webp";
 import pdp from "./../assets/pdp-app.png";
 import surfacePlanner from "./../assets/surface-planner.png";
+import surfacePlannerVideo from "./../assets/SurfacePlanner.mp4";
 import paragonProperties from "./../assets/paragon-properties.png";
 
 import "swiper/css";
@@ -22,6 +23,7 @@ const Portfolio = () => {
     const progressContent = useRef(null);
     const swiperRef = useRef(null);
     const isPaused = useRef(false);
+    const videoRef = useRef(null);
 
     const onAutoplayTimeLeft = (s, time, progress) => {
         if (progressCircle.current) {
@@ -46,12 +48,25 @@ const Portfolio = () => {
         }
     };
 
+    const handleVideoFullscreen = (e) => {
+        e.preventDefault();
+        if (videoRef.current) {
+            if (videoRef.current.requestFullscreen) {
+                videoRef.current.requestFullscreen();
+            } else if (videoRef.current.webkitRequestFullscreen) {
+                videoRef.current.webkitRequestFullscreen();
+            } else if (videoRef.current.msRequestFullscreen) {
+                videoRef.current.msRequestFullscreen();
+            }
+        }
+    };
+
     const portfolioItems = [
         {
             title: "Paragon Properties",
-            description: "Implémentation d’une carte interactive Google Maps avec React.js dans le site Paragon Properties pour afficher les projets sur la carte, ajouter des informations détaillées et intégrer des filtres dynamiques.",
+            description: "Implémentation d'une carte interactive Google Maps avec React.js dans le site Paragon Properties pour afficher les projets sur la carte, ajouter des informations détaillées et intégrer des filtres dynamiques.",
             image: paragonProperties,
-            link: "https://drive.google.com/file/d/1IARwfU9aHkmvClTbDqpMInxKsFj2Z2Im/view?usp=drive_link",
+            link: "https://drive.google.com/file/d/1uYvv5YWRMfnT-pyJTCsbJG74_f6OxWKn/view?usp=drive_link",
             disabled: false,
             stack: {
                 Frontend: "Next.js + React.js",
@@ -71,8 +86,9 @@ const Portfolio = () => {
             title: "SurfacePlanner",
             description: "Real estate listing enhancement tool with automated property quotes, professional photo editing, and dynamic forms. Full-stack Next.js with Supabase backend.",
             image: surfacePlanner,
-            link: null,
-            disabled: true,
+            video: surfacePlannerVideo,
+            link: "#video",
+            disabled: false,
             stack: {
                 Frontend: "Next.js",
                 Backend: "Next.js API Routes + Supabase",
@@ -184,24 +200,51 @@ const Portfolio = () => {
                             <SwiperSlide key={index}>
                                 <div
                                     className="flex flex-col lg:grid lg:grid-cols-2 gap-8 lg:gap-12 py-4 md:py-8"
-                                    onMouseEnter={handleMouseEnter}
-                                    onMouseLeave={handleMouseLeave}
                                 >
                                     {/* Image Section */}
-                                    <div className="order-2 lg:order-1">
+                                    <div className="order-2 lg:order-1" onMouseEnter={!item.video ? handleMouseEnter : handleMouseEnter} onMouseLeave={!item.video ? handleMouseLeave : handleMouseLeave}>
                                         <div className="relative overflow-hidden rounded-xl shadow-2xl group">
-                                            <img
-                                                src={item.image}
-                                                className="w-full h-64 sm:h-80 md:h-96 object-cover transition-transform duration-700 group-hover:scale-105"
-                                                alt={item.title}
-                                                loading="lazy"
-                                            />
-                                            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all duration-500"></div>
+                                            {item.video ? (
+                                                <video
+                                                    ref={videoRef}
+                                                    className="w-full h-64 sm:h-80 md:h-96 object-cover cursor-pointer"
+                                                    style={{ pointerEvents: 'auto' }}
+                                                    controls
+                                                    playsInline
+                                                    loop
+                                                    preload="metadata"
+                                                >
+                                                    <source src={item.video} type="video/mp4" />
+                                                    Your browser does not support the video tag.
+                                                </video>
+                                            ) : !item.disabled && item.link ? (
+                                                <a
+                                                    href={item.link}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="block cursor-pointer"
+                                                >
+                                                    <img
+                                                        src={item.image}
+                                                        className="w-full h-64 sm:h-80 md:h-96 object-cover transition-transform duration-700 group-hover:scale-105"
+                                                        alt={item.title}
+                                                        loading="lazy"
+                                                    />
+                                                </a>
+                                            ) : (
+                                                <img
+                                                    src={item.image}
+                                                    className="w-full h-64 sm:h-80 md:h-96 object-cover transition-transform duration-700 group-hover:scale-105"
+                                                    alt={item.title}
+                                                    loading="lazy"
+                                                />
+                                            )}
+                                            {!item.video && <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all duration-500"></div>}
                                         </div>
                                     </div>
 
                                     {/* Content Section */}
-                                    <div className="order-2 lg:order-1 flex flex-col justify-center mt-32 lg:mt-0">
+                                    <div className="order-2 lg:order-1 flex flex-col justify-center mt-32 lg:mt-0" onMouseEnter={!item.video ? handleMouseEnter : handleMouseEnter} onMouseLeave={!item.video ? handleMouseLeave : handleMouseLeave}>
                                         <div className="text-center lg:text-left px-4 lg:px-0">
                                             <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-3 md:mb-4">
                                                 {item.title}
@@ -228,6 +271,14 @@ const Portfolio = () => {
                                                 >
                                                     Coming Soon
                                                     <HiOutlineArrowSmRight className="text-xl group-hover:translate-x-1 transition-transform" />
+                                                </button>
+                                            ) : item.video ? (
+                                                <button
+                                                    onClick={handleVideoFullscreen}
+                                                    className="bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 text-white py-3 px-6 rounded-lg font-medium flex items-center gap-2 transition-all duration-300 mx-auto lg:mx-0 w-fit group shadow-lg hover:shadow-xl"
+                                                >
+                                                    View Project
+                                                    <HiOutlineExternalLink className="text-xl group-hover:scale-110 transition-transform" />
                                                 </button>
                                             ) : (
                                                 <a

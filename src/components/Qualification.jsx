@@ -29,27 +29,27 @@ const Qualification = () => {
     const workData = [
         {
             title: "ECODEXIA",
-            institution: "Entreprise de logiciels à Casablanca",
-            period: "May 2025 - Present",
-            duration: "Present (since May 2025)",
+            institution: "Agence de développement - CASABLANCA",
+            period: "Février 2025 - Présent",
+            duration: "Présent",
             type: "On-site",
-            description: "Ecodexia provides AI based solutions to help companies of all sizes"
+            description: "Développeur Full Stack"
         },
         {
             title: "TOMOES",
             institution: "Agence de développement - MARRAKESH",
-            period: "Janvier 2022 - Mai 2025",
-            duration: "3 ans et 4 mois",
+            period: "Juillet 2023 - Jan 2025",
+            duration: "1 an 6 mois",
             type: "Remote",
-            description: "Development agency specializing in web solutions"
+            description: "Développeur Web & Intégrateur"
         },
         {
-            title: "Stage PFE | FCPO",
-            institution: "Web development agency - OUJDA",
-            period: "2021",
-            duration: "5 months",
-            type: "Internship",
-            description: "Final year internship in web development"
+            title: "Share Conseil",
+            institution: "Agence web digitale - MAROC RABAT",
+            period: "Janvier 2022 - Avril 2023",
+            duration: "1 an 4 mois",
+            type: "On-site",
+            description: "Développeur Web & Intégrateur"
         }
     ];
 
