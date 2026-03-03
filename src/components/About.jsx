@@ -99,10 +99,11 @@ const About = () => {
                         <div className="space-y-6">
                             <div>
                                 <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                                    Full Stack Developer
+                                    Full Stack Software Engineer
                                 </h3>
                                 <p className="text-base md:text-lg text-gray-600 leading-relaxed mb-6">
-                                    I'm a passionate full-stack developer with extensive experience in modern web technologies, specializing in PHP development with Symfony, React, and Next.js. As a versatile and autonomous professional, I excel at all technical stages of web development—from analyzing requirements and backend architecture to frontend implementation, testing, and maintenance. My focus centers on creating innovative, user-friendly applications that deliver exceptional experiences while maintaining robust performance.                                </p>
+                                    Full-stack engineer with extensive experience building modern web applications, specializing in Symfony, React, and Next.js. I handle the full development cycle - from backend architecture and API design to frontend implementation and performance optimization - delivering clean, scalable, and user-focused solutions.
+                                </p>
                             </div>
 
                             {/* Highlights */}

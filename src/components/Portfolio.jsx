@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { HiOutlineArrowSmRight, HiOutlineExternalLink } from "react-icons/hi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import estoShop from "./../assets/estoShop.jpg";
@@ -24,6 +24,30 @@ const Portfolio = () => {
     const swiperRef = useRef(null);
     const isPaused = useRef(false);
     const videoRef = useRef(null);
+    const sectionRef = useRef(null);
+    const [isInView, setIsInView] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setIsInView(true);
+                    observer.disconnect();
+                }
+            },
+            { threshold: 0.3 }
+        );
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+        return () => observer.disconnect();
+    }, []);
+
+    useEffect(() => {
+        if (isInView && swiperRef.current && swiperRef.current.autoplay) {
+            swiperRef.current.autoplay.start();
+        }
+    }, [isInView]);
 
     const onAutoplayTimeLeft = (s, time, progress) => {
         if (progressCircle.current) {
@@ -64,9 +88,9 @@ const Portfolio = () => {
     const portfolioItems = [
         {
             title: "Paragon Properties",
-            description: "Implémentation d'une carte interactive Google Maps avec React.js dans le site Paragon Properties pour afficher les projets sur la carte, ajouter des informations détaillées et intégrer des filtres dynamiques.",
+            description: "Conception et développement complet du site Paragon Properties avec Next.js (App Router, Server Components, ISR) - optimisation des performances, SEO et UI/UX. Développement d'une carte interactive Google Maps en React connectée à MongoDB pour géolocaliser les projets immobiliers, avec filtres dynamiques et fiches détaillées. Intégration Sanity et Salesforce.",
             image: paragonProperties,
-            link: "https://drive.google.com/file/d/1uYvv5YWRMfnT-pyJTCsbJG74_f6OxWKn/view?usp=drive_link",
+            link: "https://paragonproperties-preview.vercel.app/",
             disabled: false,
             stack: {
                 Frontend: "Next.js + React.js",
@@ -78,6 +102,9 @@ const Portfolio = () => {
                 "Next.js",
                 "React.js",
                 "Google Maps API",
+                "Sanity",
+                "Salesforce",
+                "PostgreSQL",
                 "Real Estate Tech",
                 "Interactive Map"
             ]
@@ -154,7 +181,7 @@ const Portfolio = () => {
     ];
 
     return (
-        <div id="portfolio" className="w-full min-h-screen bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-100 py-12 md:py-20 px-4 md:px-6">
+        <div id="portfolio" ref={sectionRef} className="w-full min-h-screen bg-gradient-to-br from-slate-50 via-gray-50 to-zinc-100 py-12 md:py-20 px-4 md:px-6">
             <div className="max-w-7xl mx-auto">
                 {/* Header section - outside of swiper */}
                 <div className="text-center mb-12 md:mb-16 opacity-0 animate-fade-in">
@@ -178,6 +205,12 @@ const Portfolio = () => {
                         autoplay={{
                             delay: 6000,
                             disableOnInteraction: false,
+                            pauseOnMouseEnter: false,
+                        }}
+                        autoHeight={false}
+                        allowTouchMove={true}
+                        onInit={(swiper) => {
+                            swiper.autoplay.stop();
                         }}
                         loop={true}
                         pagination={{
@@ -239,7 +272,7 @@ const Portfolio = () => {
                                                     loading="lazy"
                                                 />
                                             )}
-                                            {!item.video && <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all duration-500"></div>}
+                                            {!item.video && <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-all duration-500 pointer-events-none"></div>}
                                         </div>
                                     </div>
 
