@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d1b7fbeb.css",
-    "main.js": "/portfolio/static/js/main.3d768406.js",
+    "main.js": "/portfolio/static/js/main.7c500206.js",
     "static/js/787.95afaf24.chunk.js": "/portfolio/static/js/787.95afaf24.chunk.js",
     "static/media/SurfacePlanner.mp4": "/portfolio/static/media/SurfacePlanner.fe4b5aa4bd9fa392fd86.mp4",
+    "static/media/Pdp-signing-platform.mp4": "/portfolio/static/media/Pdp-signing-platform.d8003756ea48340aaf69.mp4",
     "static/media/paragon-properties.png": "/portfolio/static/media/paragon-properties.697ea8de8ba9fd2e4e1d.png",
     "static/media/me.png": "/portfolio/static/media/me.c2375c6a7affc3493384.png",
     "static/media/shop.png": "/portfolio/static/media/shop.87c54bbdd377bc031097.png",
@@ -16,11 +17,11 @@
     "static/media/alert-app.jpg": "/portfolio/static/media/alert-app.195d061de81b48235880.jpg",
     "index.html": "/portfolio/index.html",
     "main.d1b7fbeb.css.map": "/portfolio/static/css/main.d1b7fbeb.css.map",
-    "main.3d768406.js.map": "/portfolio/static/js/main.3d768406.js.map",
+    "main.7c500206.js.map": "/portfolio/static/js/main.7c500206.js.map",
     "787.95afaf24.chunk.js.map": "/portfolio/static/js/787.95afaf24.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d1b7fbeb.css",
-    "static/js/main.3d768406.js"
+    "static/js/main.7c500206.js"
   ]
 }
