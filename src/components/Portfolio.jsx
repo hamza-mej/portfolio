@@ -9,6 +9,7 @@ import booking from "./../assets/booking-app.webp";
 import pdp from "./../assets/pdp-app.png";
 import surfacePlanner from "./../assets/surface-planner.png";
 import surfacePlannerVideo from "./../assets/SurfacePlanner.mp4";
+import pdpSigningPlatformVideo from "./../assets/Pdp-signing-platform.mp4";
 import paragonProperties from "./../assets/paragon-properties.png";
 
 import "swiper/css";
@@ -114,7 +115,7 @@ const Portfolio = () => {
             description: "Real estate listing enhancement tool with automated property quotes, professional photo editing, and dynamic forms. Full-stack Next.js with Supabase backend.",
             image: surfacePlanner,
             video: surfacePlannerVideo,
-            link: "#video",
+            link: "https://space-planner-frontend.vercel.app/",
             disabled: false,
             stack: {
                 Frontend: "Next.js",
@@ -152,6 +153,7 @@ const Portfolio = () => {
             title: "PDP Signing Platform",
             description: "Role-based document signing system for enterprises with digital signatures, PDF/Word handling, and email notifications.",
             image: pdp,
+            video: pdpSigningPlatformVideo,
             link: "https://drive.google.com/file/d/1h_upD9E_7TRi1gZfzfwA_2gUciW8jW6O/view",
             disabled: false,
             tags: [
@@ -306,13 +308,15 @@ const Portfolio = () => {
                                                     <HiOutlineArrowSmRight className="text-xl group-hover:translate-x-1 transition-transform" />
                                                 </button>
                                             ) : item.video ? (
-                                                <button
-                                                    onClick={handleVideoFullscreen}
+                                                <a
+                                                    href={item.link || "#video"}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
                                                     className="bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 text-white py-3 px-6 rounded-lg font-medium flex items-center gap-2 transition-all duration-300 mx-auto lg:mx-0 w-fit group shadow-lg hover:shadow-xl"
                                                 >
-                                                    View Project
+                                                    {item.link ? "View Project" : "Open Video"}
                                                     <HiOutlineExternalLink className="text-xl group-hover:scale-110 transition-transform" />
-                                                </button>
+                                                </a>
                                             ) : (
                                                 <a
                                                     href={item.link}
