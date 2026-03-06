@@ -166,10 +166,12 @@ const Portfolio = () => {
         },
         {
             title: "Notification Scheduling Alerts",
-            description: "Desktop app for scheduling alerts with customizable notifications (built with Electron).",
+            description: "MUC Active Pause – desktop app for scheduling alerts with customizable notifications (built with Electron).",
             image: alert,
-            link: null,
-            disabled: true,
+            link: "https://github.com/hamza-mej/MUCActivePause/releases/download/v1.0.0/MUCPausesActives-app.Setup.1.0.0.exe",
+            disabled: false,
+            // custom label for this download project
+            buttonText: "Télécharger App",
             tags: ["Electron", "React", "Desktop", "Time-based Alerts"]
         },
         {
@@ -324,7 +326,7 @@ const Portfolio = () => {
                                                     rel="noopener noreferrer"
                                                     className="bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 text-white py-3 px-6 rounded-lg font-medium flex items-center gap-2 transition-all duration-300 mx-auto lg:mx-0 w-fit group shadow-lg hover:shadow-xl"
                                                 >
-                                                    View Project
+                                                    {item.buttonText || "View Project"}
                                                     <HiOutlineExternalLink className="text-xl group-hover:scale-110 transition-transform" />
                                                 </a>
                                             )}
